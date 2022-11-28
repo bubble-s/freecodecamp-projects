@@ -1,0 +1,129 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>St. Anthony Muthiga Enquiry Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form">
+      <main>
+     <h1 id="title">St. Anthony Muthiga Enquiry Form</h1>
+     <p id="description">Thank you for your enquiry, please fill out this form. </p>
+     <form id="survey-form" method="post">
+       <fieldset>
+         <label id="name-label">Full Name: <input id="name" type="text" placeholder="Enter your name" required/></label>
+         <label id= "number-label">Telephone No: <input id="number" type="number" min="00" max="1000000000" placeholder="Enter your phone no."required/></label>
+         <label id="email-label">Email address: <input id="email" type="email" placeholder="Enter your email" required /></label>
+         <label for="location">Location: <input id="location" type="text" placeholder="Enter where you live"/></label>
+       </fieldset>
+       <fieldset>
+         <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">select one</option>
+            <option value="1">Social media</option>
+            <option value="2">Referral</option>
+            <option value="3">Outdoor advertising</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>How would you like us to contact you?
+        <label for="email"><input id="email" type="radio" value="email" name="contact-option" class="inline" /> Email</label>
+        <label for="telephone"><input id="telephone" type="radio" value="telephone" name="contact-option" class="inline" /> Telephone</label>
+        <label for="agree-to-contact" name="agree-to-contact">
+          <input id="agree-to-contact" type="checkbox" required name="agree-to-contact" value="agree" class="inline" /> I agree to be contacted
+        </label>
+        <label for="disagree-to-contact" name="disagree-to-contact">
+          <input id="disagree-to-contact" type="checkbox" required name="disagree-to-contact" value="disagree" class="inline" /> I don't agree to be contacted
+        </label>
+        </label>
+       </fieldset>
+       <fieldset>
+         <label for="enquiry">Enter your enquiry here:
+          <textarea id="enquiry" name="enquiry" rows="3" cols="30" placeholder="I'd like to enquire about..."></textarea>
+        </label>
+       </fieldset>
+       <input id="submit" type="submit" value="Submit">
+     </form>
+     </main>
+     </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+ background-image: url("https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ font-family: Tahoma;
+ font-size: 16px;
+ width: 100%;
+ height: 100vh;
+ margin: 0;
+ background-color: green;
+ color: yellow;
+}
+.form{
+  width: 60%;
+  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;}
+
+label {
+ display: block;
+ margin: 0.5rem 0;}
+
+h1,p {
+  margin: 1em auto;
+  text-align: center;}
+  
+form {
+ margin:0 auto;
+ max-width: 500px;
+ min-width: 300px;
+ width: 60vw;
+ padding-bottom: 2em;
+ }
+ 
+fieldset {
+ border:0;
+ border-bottom: 3px solid rgb(255,0,0);
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ padding-right:0;
+ padding-left: 0;
+}
+
+fieldset:last-of-type{
+  border-bottom:none;}
+  
+input, textarea, select{
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left:0;
+  margin-right:0;
+  min-height: 2em;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+  min-width:300px;
+  margin: 1em auto 1em auto;
+  font-size:1.1rem;
+  height:2em;
+  background-color: #3b3b4f;
+  border-color: white;
+}
+
+** end of undefined **
+
